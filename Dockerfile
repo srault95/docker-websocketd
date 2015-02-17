@@ -11,7 +11,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   ca-certificates \
   software-properties-common \
   unzip \
-  wget
+  wget \
+  git
 
 RUN add-apt-repository -y ppa:nginx/stable
 RUN apt-get update -y -q
