@@ -1,7 +1,7 @@
-Websocketd/vmstats with Nginx Proxy
-===================================
+Websocketd on Docker with Nginx Proxy
+=====================================
 
-Use this repository to quickly test **`Websocketd`_**
+Use this repository to quickly test `Websocketd`_
 
 Thank you `Web-vmstats`_ for its implementation of vmstat with websocketd
 
@@ -19,35 +19,35 @@ Screenshots
 |vmstat| 
 
 
-
 Docker Build
 ------------
 
-::
+.. code-block:: bash
 
-    git clone https://github.com/srault95/docker-websocketd.git
+    $ git clone https://github.com/srault95/docker-websocketd.git
     
-    cd docker-websocketd
+    $ cd docker-websocketd
     
-    docker build -t srault95/websocketd .
+    $ docker build -t srault95/websocketd .
     
 Docker Run
 ----------
 
-::
+.. code-block:: bash
 
-   docker run -d --name mysocket -p 8089:80 srault95/websocketd
+   $ docker run -d --name mysocket -p 8089:80 srault95/websocketd
    
-   # default user/password: root/root
-   
-   http://YOUR_PUBLIC_IP:8089
+   # default user/password: root/root   
+   # http://YOUR_PUBLIC_IP:8089
    
 Change User/Password
 --------------------
 
-::
+.. code-block:: bash
 
-   docker run -d --name mysocket -p 8089:80 -e DEFAULT_USER=myuser -e DEFAULT_PASSWORD=password srault95/websocketd
+   docker run -d --name mysocket -p 8089:80 \
+     -e DEFAULT_USER=myuser -e DEFAULT_PASSWORD=password \
+     srault95/websocketd
 
 
 Links
@@ -59,10 +59,10 @@ Links
 - `Ubuntu`_
 
 
-.. _`Docker`: https://www.docker.com/
-.. _`Ubuntu`: http://www.ubuntu.com/
+.. _`Docker`: https://www.docker.com
+.. _`Ubuntu`: http://www.ubuntu.com
 .. _`Web-vmstats`: https://github.com/joewalnes/web-vmstats
-.. _`Websocketd`: http://websocketd.com/
+.. _`Websocketd`: http://websocketd.com
 
 .. |vmstat| image:: screen1.png
    :alt: vmstat
