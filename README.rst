@@ -2,8 +2,8 @@ Docker example for Websocketd behind Nginx Proxy
 ================================================
 
 
-Run
----
+Docker Build
+------------
 
 ::
 
@@ -11,4 +11,11 @@ Run
     
     cd docker-websocketd
     
-    docker build -t srault95/websocketd
+    docker build -t srault95/websocketd .
+    
+Docker Run
+----------
+
+::
+
+   docker run -d --name mysocket srault95/websocketd  
