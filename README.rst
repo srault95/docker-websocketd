@@ -1,14 +1,15 @@
 Websocketd/vmstats with Nginx Proxy
 ===================================
 
-**`Websocketd`_*  is the WebSocket daemon written in Go Lang 
+Use this repository to quickly test **`Websocketd`_**
+
+Thank you `Web-vmstats`_ for its implementation of vmstat with websocketd
+
 
 - `Websocketd`_
 - `Web-vmstats`_
 - `Docker`_
 - `Ubuntu`_
-
-Use this repository for testing quickly
 
 Based on `Docker`_ 1.4.1 with `Ubuntu`_ 14.04 and latest `Websocketd`_
 
