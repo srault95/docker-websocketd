@@ -33,19 +33,21 @@ Docker Build
 Docker Run
 ----------
 
+- default user/password: root/root   
+
+- http://YOUR_PUBLIC_IP:8089
+
 .. code-block:: bash
 
    $ docker run -d --name mysocket -p 8089:80 srault95/websocketd
    
-   # default user/password: root/root   
-   # http://YOUR_PUBLIC_IP:8089
    
 Change User/Password
 --------------------
 
 .. code-block:: bash
 
-   docker run -d --name mysocket -p 8089:80 \
+   $ docker run -d --name mysocket -p 8089:80 \
      -e DEFAULT_USER=myuser -e DEFAULT_PASSWORD=password \
      srault95/websocketd
 
